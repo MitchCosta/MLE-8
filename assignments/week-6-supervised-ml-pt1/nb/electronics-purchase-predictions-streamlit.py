@@ -134,8 +134,19 @@ with tab2:
     st.write(fig2, width = 150)
 
 with tab3:  
+    
+    figures = {
+    'Logistic Regression': 'shap_lr_model.png',
+    'SVM': 'shap_svm_model.png',
+    'Gradient Boosting Classifier': 'shap_gbt_model.png'
+}
+    
     st.header(model1_select)
+    
+    st.image(figures[model1_select]) 
     
     st.header(model2_select)
 
     # YOUR CODE GOES HERE!
+    st.image(figures[model2_select]) 
+    
