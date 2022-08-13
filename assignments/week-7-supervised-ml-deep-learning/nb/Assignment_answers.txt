@@ -1,0 +1,51 @@
+
+
+Interview Readiness
+What is Normalization and how does Normalization make training a model more stable?
+
+ANS:Normalizing a set of data transforms the set of data to be on a similar scale. For machine learning models, our goal is usually to recenter and rescale our data such that is between 0 and 1 or -1 and 1, depending on the data itself.
+ANS:
+Normalization can help training of our neural networks as the different features are on a similar scale, which helps to stabilize the gradient descent step, allowing us to use larger learning rates or help models converge faster for a given learning rate.
+
+
+Interview Readiness
+What are loss and optimizer functions and how do they work?
+
+ANS:The loss function is a method of evaluating how well a machine learning algorithm models a featured data set. In other words, loss functions are a measurement of how good a model is in terms of predicting the expected outcome.
+ANS:Optimizers are used to adjust the parameters for a model. The purpose of an optimizer is to adjust model weights to maximize a loss function.
+
+
+What is Gradient Descent and how does it work?
+
+ANS:Gradient descent (GD) is an iterative first-order optimisation algorithm used to find a local minimum of a given function.
+ANS:The goal of the gradient descent algorithm is to minimize the cost function. To achieve this goal, it performs two steps iteratively:
+1-Compute the gradient (slope), the first order derivative of the function at that point.
+2-Make a step (move) in the direction opposite to the gradient, opposite direction of slope increase from the current point by alpha (alpha=Learning rate) times the gradient at that point.
+
+Interview Readiness
+What is an activation function?
+ANS:An activation function basically decide whether the neuron should be activated or not. The activation function defines the output of that node given an input or set of inputs.
+
+
+What are the outputs of the following activation functions: ReLU, Softmax Tanh, Sigmoid
+
+ReLU: R(z)={z if z>0, 0 if z<=0}
+
+Softmax: S(Zi) = e^Zi / sum(e^Zj)  -> i=specific class, j=all other classes
+
+Tanh: Tanh(z) = (e^z - e^(-z)) / (e^z + e^(-z))
+  
+Sigmoid:  S(z) = 1/(1+e^(-z))
+
+
+
+Algorithm Understanding
+What is the TPOT algorithm and how does it work?
+ANS: is TPOT is an AutoML tool specifically designed for the efficient construction of optimal pipelines through genetic programming.
+ANS:TPOT uses a version of genetic programming to automatically design and optimize a series of data transformations and machine learning models that attempt to maximize the classification accuracy for a given supervised learning data set.
+
+
+What does TPOT stand for?
+TPOT (Tree-based Pipeline Optimization Tool)
+
+
